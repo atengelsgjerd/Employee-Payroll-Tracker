@@ -1,13 +1,26 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
+const employees = []; //Array to store employee data
+    addEmployeesBtn.addEventListener('click', function() {
+      const userInput1 = prompt('Enter First Name:');
+      const userInput2 = prompt('Enter Last Name:');
+      const userInput3 = prompt('Enter salary:');
 
+      const employee = {
+        firstName: userInput1,
+        lastName: userInput2,
+        salary: parseFloat(userInput3) || 0 //Convert salary to a number, default to 0 if not a valid number
+      };
+      employees.push(employee); //Add the employee object to the array
+    });
 // Collect employee data
 const collectEmployees = function() {
+            return employees;
   // TODO: Get user input to create and return an array of employee objects
-}
+};
 
 // Display the average salary
-const displayAverageSalary = function(employeesArray) {
+const displayAverageSalary = function(employees) {
   // TODO: Calculate and display the average salary
 }
 
