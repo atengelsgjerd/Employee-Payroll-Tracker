@@ -1,27 +1,48 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
-const employees = []; //Array to store employee data
-    addEmployeesBtn.addEventListener('click', function() {
-      const userInput1 = prompt('Enter First Name:');
-      const userInput2 = prompt('Enter Last Name:');
-      const userInput3 = prompt('Enter salary:');
-
-      const employee = {
-        firstName: userInput1,
-        lastName: userInput2,
-        salary: parseFloat(userInput3) || 0 //Convert salary to a number, default to 0 if not a valid number
+    //addEmployeesBtn.addEventListener('click', function() {
+    
+      const employeeSalary = {
+        salary: parseFloat(userInput3) || 0
       };
-      employees.push(employee); //Add the employee object to the array
+      employees.push(employee); //Add the employee object to employees array
+      salaries.push(employeeSalary);
     });
 // Collect employee data
 const collectEmployees = function() {
-            return employees;
   // TODO: Get user input to create and return an array of employee objects
+  const employees = []; //Array to store employee data
+
+  let loopVal = true;
+
+  while(loopVal){
+    const firstName = prompt("Enter First Name");
+    const lastName = prompt("Enter Last Name");
+    const mySalary = prompt("Enter Your Salary");
+    if (isNaN(mySalary)){
+      mySalary = 0
+    }
+    const employee = {
+      firstName: firstName,
+      lastName: lastName,
+      salary: parseFloat(mySalary)
+    }
+    //Make code that will add the employee object to the employee array
+    
+  }
+  return employees
 };
 
 // Display the average salary
-const displayAverageSalary = function(employees) {
-  // TODO: Calculate and display the average salary
+const displayAverageSalary = function(employeesArray) {
+  const employees = 0;
+
+  const employeeNumbers = employeesArray.length
+
+    for (let employeesArray in employees){
+      
+    }
+     
 }
 
 // Select a random employee
