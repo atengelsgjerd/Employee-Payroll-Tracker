@@ -26,4 +26,4 @@ N/A
 
 [Click here to access the website](https://atengelsgjerd.github.io/ATEportfolio/)
 
-![Portfolio Website](/Develop/images/Employee.payroll.tracker.png)
+![Employee Payroll Tracker](/Assets/images/Employee.payroll.tracker.png)
